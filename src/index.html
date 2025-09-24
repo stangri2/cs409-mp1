@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messi Fan Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#video">Highlights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="stripe center-vertical">
+    <h1>Welcome to the Messi Fan Page</h1>
+    <p>The greatest footballer of all time ⚽🐐</p>
+  </section>
+
+  <section id="career" class="stripe multi-column">
+    <h2>Career Highlights</h2>
+    <div class="columns">
+        <div><p><strong>Career Stats:</strong> 882 goals · 391 assists · 1123 appearances</p></div>
+        <div><p><strong>Awards:</strong> 8 Ballon d'Or</p></div>
+        <div><p><strong>International (Argentina):</strong> Copa América 2021 & 2024 · World Cup 2022</p></div>
+        <div><p><strong>Club Trophies:</strong> 12 League Titles · 4 Champions Leagues</p></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="stripe">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <div class="slides">
+        <img src="assets/messi1.jpg" alt="Messi 1">
+        <img src="assets/messi2.jpg" alt="Messi 2">
+        <img src="assets/messi3.jpg" alt="Messi 3">
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+    <section id="video" class="stripe">
+    <h2>Messi Freekick Highlights</h2>
+    <video controls width="640">
+        <source src="https://archive.org/download/messi-mix-videos/Lionel%20Messi%20-%20All%20Free%20Kick%20Goals%20_%20HD.mp4" type="video/mp4">
+        Sorry, your browser does not support the video tag.
+    </video>
+    </section>
+
+  <section id="contact" class="stripe background-image">
+    <h2>Connect with Messi Fans</h2>
+    <button id="openModal">Join the Community</button>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Fan Club Signup</h2>
+      <p>Follow Messi’s journey and connect with fans worldwide!</p>
+    </div>
+  </div>
+
+<footer>
+  <p>Follow Messi</p>
+  <div class="social-icons">
+    <a href="https://twitter.com/Messi" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/leomessi" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/leomessi" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+</footer>
+</body>
 </html>
